@@ -15,3 +15,4 @@ sudo docker build -t webserver .
 
 # run nginx container with sample web page
 sudo docker run -it -d -p 8080:80 --name web webserver
+sudo docker update --restart=always web
